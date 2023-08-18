@@ -19,8 +19,19 @@ git remote add origin git@github.com:Domoratskiy/Case1.git
 git push -u origin master
 ```
 
+$ cd ~/dev
+$ mkdir git-status-lesson
+$ cd git-status-lesson
+$ git init
+# тут Git выведет что-нибудь, но мы это пропустим
+$ touch README.md
+$ git add README.md
+$ git commit -m 'Добавить README'
+~~~~# по традиции первым создадим и закоммитим файл README.md
+
 ## Статусом untracked помечается файл, о существовании которого Git знает, но не следит за изменениями в нём. Этот статус — противоположность tracked, в который попадают все файлы, отслеживаемые Git.
 ## Файл переходит в статус staged после выполнения git add.
 ## Статус modified означает, что файл был изменён.
 ## Большинство файлов в проектах «шагает» по следующему циклу: «изменён» → «добавлен в список на коммит» → «закоммичен» → «изменён» → и так далее.
+
 
